@@ -3,18 +3,6 @@ import easyocr
 import psycopg2
 from datetime import datetime
 
-"""
-В директории screenshots лежат скриншоты
-Обходим каждый файл скриншота и распознаем
-Результат сохраняем в таблицу баз данных PostgreSQL 
-Заранее надо создать ее
-CREATE TABLE public.running_strings (
-  id serial NOT NULL,
-  time_c timestamp NULL,
-  "text" text NULL
-);
-"""
-
 debug = True
 directory = ("screenshots")
 DB_dbname = "postgres"
